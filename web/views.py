@@ -10,7 +10,7 @@ class MessageList(ListView):
 class MessageDetail(DetailView):
     model = Message
 
-class Message(CreateView):
+class MessageCreate(CreateView):
     model = Message
     fields = '__all__'
     success_url = reverse_lazy('msg_list')
