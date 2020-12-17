@@ -9,4 +9,5 @@ urlpatterns = [
     # Ex: message/2/
     path('create/', MessageCreate.as_view(), name='msg_create'),
     # message/create/
+    path('<int:pk>/delete/', MessageDelete.as_view(), name='msg_delete'),
 ]
